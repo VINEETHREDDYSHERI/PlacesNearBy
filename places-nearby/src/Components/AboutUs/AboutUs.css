@@ -1,0 +1,36 @@
+.video-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width:900px) {
+    
+  .story-container {
+    width: 55%;
+  }
+
+  .story-text {
+    max-width: 92%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  
+  .story-text {
+    text-align: center;
+  }
+  
+}

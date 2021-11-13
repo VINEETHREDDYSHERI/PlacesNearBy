@@ -1,0 +1,46 @@
+.search-msg {
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 64px;
+}
+
+.search-container {
+    background-color: white;
+    width: 60vw;
+    border-radius: 12px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-form {
+    padding: 16px;
+    display: flex;
+}
+
+.advance-btn {
+    width: fit-content;
+    margin: -20px 28px 0px auto;
+    padding-bottom: 8px;
+}
+.search-filter {
+    padding: 16px;
+    display: flex;
+}
+
+.search-form fieldset {
+    border: 0px;
+}
+
+
+@media screen and (max-width:600px) {
+    .search-main-msg {
+        font-size: 2.5rem !important;
+    }
+
+    .search-body-msg {
+        font-size: 1rem !important;
+        font-weight: 300;
+    }
+    
+}
