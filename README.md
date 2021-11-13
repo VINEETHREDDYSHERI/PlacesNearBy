@@ -16,3 +16,4 @@ npm i
 
 npm run start
 
+Open the browser and go to https://localhost:3000
