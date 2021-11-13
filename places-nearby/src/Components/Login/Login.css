@@ -1,0 +1,60 @@
+.login-img {
+    width: 100%;
+    height: 100%;
+    margin-top: 8px;
+    max-height: 650px;
+}
+
+.login { 
+    margin-top: 64px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.login-msg {
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.app-login-color {
+    color: #213DDA;
+}
+
+.caption-msg {
+    color: darkslategray;
+}
+
+.login-features {
+    display: flex;
+    align-items: center;
+}
+
+.forgot-link {
+    margin-left: auto !important;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 1.5rem !important;
+}
+
+.signin-btn {
+    width: 75%;
+}
+
+@media screen and (max-width:900px) {
+    
+    .login-container {
+        display:flex; 
+        justify-content:center;
+        margin-bottom: 64px !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+    .welcome-msg {
+        font-size: 2.5rem !important;
+    }
+    
+}
