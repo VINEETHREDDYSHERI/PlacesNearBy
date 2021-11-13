@@ -1,6 +1,6 @@
 # PlacesNearBy
 
-After cloning the repo into local using the below commands to run:
+After cloning the repo, use the below commands to run:
 ## Backend:
 cd backend
 
