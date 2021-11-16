@@ -21,7 +21,7 @@ class AboutUs extends PureComponent {
                 controls={true}
                 width="100%"
                 height="100%"
-                url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+                url="https://www.youtube.com/watch?v=i76MCEwno90"
               />
             </div>
           </div>
