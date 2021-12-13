@@ -94,7 +94,7 @@ class Signup extends Component {
   createAccount = () => {
     try {
       axios
-        .post("http://localhost:3001/signup", {
+        .post("https://nearby-backend-app.herokuapp.com/signup", {
           firstname: this.state.firstName,
           lastname: this.state.lastName,
           emailAddress: this.state.emailAddress,

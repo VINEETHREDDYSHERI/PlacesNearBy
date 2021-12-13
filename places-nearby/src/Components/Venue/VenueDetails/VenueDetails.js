@@ -183,7 +183,7 @@ class VenueDetails extends Component {
     try {
       axios
         .get(
-          "http://localhost:3001/getFavourites?emailAddress=" +
+          "https://nearby-backend-app.herokuapp.com/getFavourites?emailAddress=" +
             this.props.cookies.get("emailId")
         )
         .then((res) => {
@@ -238,7 +238,7 @@ class VenueDetails extends Component {
     } else {
       try {
         axios
-          .post("http://localhost:3001/addFavourite", {
+          .post("https://nearby-backend-app.herokuapp.com/addFavourite", {
             emailAddress: this.props.cookies.get("emailId"),
             venueId: this.state.venueDetails.id,
           })
@@ -254,7 +254,7 @@ class VenueDetails extends Component {
   removeFromFavouriteList = () => {
     try {
       axios
-        .post("http://localhost:3001/removeFavourite", {
+        .post("https://nearby-backend-app.herokuapp.com/removeFavourite", {
           emailAddress: this.props.cookies.get("emailId"),
           venueId: this.state.venueDetails.id,
         })

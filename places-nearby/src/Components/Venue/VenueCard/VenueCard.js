@@ -42,7 +42,7 @@ class VenueCard extends React.Component {
     } else {
       try {
         axios
-          .post("http://localhost:3001/addFavourite", {
+          .post("https://nearby-backend-app.herokuapp.com/addFavourite", {
             emailAddress: this.props.cookies.get("emailId"),
             venueId: this.props.venue.id,
           })
@@ -62,7 +62,7 @@ class VenueCard extends React.Component {
   removeFromFavouriteList = () => {
     try {
       axios
-        .post("http://localhost:3001/removeFavourite", {
+        .post("https://nearby-backend-app.herokuapp.com/removeFavourite", {
           emailAddress: this.props.cookies.get("emailId"),
           venueId: this.props.venue.id,
         })

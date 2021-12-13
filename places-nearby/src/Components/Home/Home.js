@@ -247,7 +247,7 @@ class Home extends Component {
     try {
       axios
         .get(
-          "http://localhost:3001/getFavourites?emailAddress=" +
+          "https://nearby-backend-app.herokuapp.com/getFavourites?emailAddress=" +
             this.props.cookies.get("emailId")
         )
         .then((res) => {

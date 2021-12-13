@@ -97,7 +97,7 @@ class Login extends Component {
   resetPwd = (code, pwd) => {
     try {
       axios
-        .post("http://localhost:3001/resetPwd", {
+        .post("https://nearby-backend-app.herokuapp.com/resetPwd", {
           emailAddress: this.state.resetEmailAddress,
           code: code,
           password: pwd,
@@ -119,7 +119,7 @@ class Login extends Component {
   sendPwdResetInstruction = (emailAddress) => {
     try {
       axios
-        .post("http://localhost:3001/forgotPwdEmail", {
+        .post("https://nearby-backend-app.herokuapp.com/forgotPwdEmail", {
           emailAddress: emailAddress,
         })
         .then((res) => {
@@ -146,7 +146,7 @@ class Login extends Component {
       // Need to add API changes to check credentials
       try {
         axios
-          .post("http://localhost:3001/login", {
+          .post("https://nearby-backend-app.herokuapp.com/login", {
             emailAddress: this.state.emailAddress,
             password: this.state.password,
           })
